@@ -1,0 +1,622 @@
+body {
+      background-color: gray;
+    
+    
+
+    /* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+    background-image: url(white-low-poly-background-338.jpg);
+}
+
+/* BANNER DE COOKIES */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: none; /* El banner estará oculto por defecto */
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    font-size: 1rem;
+}
+
+#accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#accept-cookies:hover {
+    background-color: #45a049;
+}
+
+/* GIF DE AVIÓN (AQUÍ SE POSICIONA Y ANIMA) */
+.airplane-gif-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 60px; /* Tamaño pequeño */
+    height: auto;
+    z-index: 1000;
+    animation: moveAirplane 5s linear infinite;
+}
+
+.airplane-gif {
+    width: 100%;
+    height: auto;
+}
+
+/* ANIMACIÓN DEL AVIÓN MOVIÉNDOSE */
+@keyframes moveAirplane {
+    0% { right: 10px; }
+    50% { right: 50px; }
+    100% { right: 10px; }
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* SECCIÓN PRINCIPAL Y AVIONES */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.airplanes {
+    margin-bottom: 40px;
+}
+
+.airplanes h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li.airplane {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li.airplane:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imageDisplay {
+    width: 300px;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="email"], input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 50px;
+}
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* SECCIÓN PRINCIPAL */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* SECCIÓN DE AVIONES */
+.airplanes {
+    margin-bottom: 40px;
+}
+
+.airplanes h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li.airplane {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li.airplane:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imageDisplay {
+    width: 300px;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* SECCIÓN DE FORMULARIO */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="email"], input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 50px;
+}
+
+body {
+    /* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: none; /* El banner estará oculto por defecto */
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    font-size: 1rem;
+}
+
+#accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#accept-cookies:hover {
+    background-color: #45a049;
+}
+
+/* Encabezado y resto de la página */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Otras secciones (aviones, formulario) no han cambiado */
+
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* BANNER DE COOKIES */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: none; /* El banner estará oculto por defecto */
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    font-size: 1rem;
+}
+
+#accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#accept-cookies:hover {
+    background-color: #45a049;
+}
+
+/* GIF DE AVIÓN (AQUÍ SE POSICIONA Y ANIMA) */
+.airplane-gif-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 60px; /* Tamaño pequeño */
+    height: auto;
+    z-index: 1000;
+    animation: moveAirplane 5s linear infinite;
+}
+
+.airplane-gif {
+    width: 100%;
+    height: auto;
+}
+
+/* ANIMACIÓN DEL AVIÓN MOVIÉNDOSE */
+@keyframes moveAirplane {
+    0% { right: 10px; }
+    50% { right: 50px; }
+    100% { right: 10px; }
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* SECCIÓN PRINCIPAL Y AVIONES */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.airplanes {
+    margin-bottom: 40px;
+}
+
+.airplanes h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li.airplane {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li.airplane:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imageDisplay {
+    width: 300px;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Añadimos más espacio entre campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="email"], input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 50px;
+}
+
+/* AGREGAR MÁS ESPACIO ENTRE PÁRRAFOS GENERALES */
+p {
+    margin-bottom: 20px; /* Espaciado adicional entre párrafos */
+}
+
+h7.titulo-aerolinea {
+    font-size: 36px; /* Aumenta el tamaño del texto */
+    color: #2980b9; /* Color azul elegante */
+    font-weight: bold;
+    text-transform: uppercase; /* Hace el texto en mayúsculas */
+    background-color: #ecf0f1; /* Fondo de color suave */
+    padding: 15px 30px; /* Espaciado alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animación suave */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+    text-align: center; /* Centra el texto */
+}
+
+h7.titulo-aerolinea:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    background-color: #3498db; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto */
+}
+
+
+
+}
